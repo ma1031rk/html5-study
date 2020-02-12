@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    font-family: "microsoft jhenghei";
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+} */
+img {
+    width: 100%;
+    /* vertical-align: top; */
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.btn{
+    display: inline-block;
+    border: 0;
+    text-decoration: none;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+.btn-light{
+    background-color: #eef9bf;
+}
+.btn-dark{
+    background-color: #6a8caf;
+    color: #eee;
+}

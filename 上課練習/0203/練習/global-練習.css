@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    font-family: "microsoft thenghei";
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+.btn{
+    display: inline-block;
+    border: 0px;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #a3a3a3;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-light{
+    background-color: #ffee8b;
+}
+.btn-light:hover{
+    background-color: #f1dd6a;
+}
+.btn-dark{
+    background-color: #283958;
+    color:white;
+}
+.btn-dark:hover{
+    background-color: #3e4655;
+}
+
+.form-group{
+    margin: 10px 0;
+}
+.form-control{
+    /* border: 1px solid #616264; */
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+    outline: 0px;
+}
+.form-control:focus{
+    background-color: #c6e2fd;
+}
+.t-right{
+    text-align: right;
+}

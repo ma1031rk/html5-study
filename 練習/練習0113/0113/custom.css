@@ -1,0 +1,119 @@
+nav {
+    height: 60px;
+    /* padding-bottom: 5px;
+    padding-top: 5px; */
+    background-color: #c2c2c2d3;
+    line-height: 60px;
+}
+nav .logo{
+    float: left;
+}
+nav .menu {
+    float: right;
+}
+nav .menu li {
+    list-style: none;
+    float: left;
+    margin: 0 5px;
+}
+nav a {
+    
+    padding: 0 10px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+nav .menu a:hover{
+    background-color: #0000009a;
+    color: white;
+}
+
+/* nav {
+    background-color: #c2c2c2d3;
+}
+nav .fixed-width{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+nav .menu {
+    margin-left: auto;
+}
+nav ul{
+    display: flex;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    padding:15px;
+    color:#000
+}
+nav .menu a:hover{
+    background-color: #fff;
+    background-color: #0000009a;
+    color: white;
+} */
+header {
+    background-image: url('https://picsum.photos/id/147/1200/600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+}
+header .row{
+    color: white;
+    text-align: center;
+    justify-content: center;
+   
+}
+header h1{
+    font-size: 72px;
+    text-shadow: 5px 5px 1px black;
+}
+.row p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    
+}
+.row .col-4 {
+    text-align: center;
+}
+
+#about{
+    padding:150px 0;
+    background-color: #ddd;
+    background-image: url('https://picsum.photos/id/60/1200/500');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#about h1 {
+    text-align: center;
+    border-bottom: 1px #3f3f3f dotted;
+    padding-bottom: 15px;
+}
+#about p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+#product {
+    padding: 150px 0;
+    background-color: #ffa3d9;
+}
+#product h1{
+    text-align: center;
+    border-bottom: 1px dotted #3f3f3f;
+    padding-bottom: 15px;
+}
+#product span {
+    margin:30px 0;
+    line-height: 1.5em;
+}

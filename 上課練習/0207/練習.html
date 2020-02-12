@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "microsoft thenghei";
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        .full-width{
+            width: 100%;
+        }
+        .fixed-width{
+            width: 100%;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-12{
+            flex: 0 1 100%;
+            padding: 15px;
+        }
+            body{
+                background-color: #ffa5a5;
+            }
+        @media(min-width: 600px){
+            body{
+                background-color: #070bf5;
+            }
+            .fixed-width{
+                margin: auto;
+            }
+            .col-md-6{
+                flex:0 1 calc(100%/12 * 6)
+            }
+            
+        }
+        @media(min-width: 1200px){
+            body{
+                background-color: #ffdf4f;
+            }
+            .col-lg-3{
+                flex:0 1 calc(100%/ 12 * 3)
+            }
+                 }
+    </style>
+</head>
+<body>
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h1>title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore mollitia. Temporibus, repellendus. Quidem laudantium laboriosam sapiente adipisci. Nam molestiae deserunt quidem dolorem, voluptas saepe sapiente suscipit minima eos ad.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h1>title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore mollitia. Temporibus, repellendus. Quidem laudantium laboriosam sapiente adipisci. Nam molestiae deserunt quidem dolorem, voluptas saepe sapiente suscipit minima eos ad.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h1>title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore mollitia. Temporibus, repellendus. Quidem laudantium laboriosam sapiente adipisci. Nam molestiae deserunt quidem dolorem, voluptas saepe sapiente suscipit minima eos ad.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h1>title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore mollitia. Temporibus, repellendus. Quidem laudantium laboriosam sapiente adipisci. Nam molestiae deserunt quidem dolorem, voluptas saepe sapiente suscipit minima eos ad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "Microsoft Jhenghei";
+            box-sizing: border-box;
+        }
+        .full-width {
+            width: 100%;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .fixed-width {
+            width: 100%;
+            margin: auto;
+        }
+        .col-3 {
+            flex: 0 1 calc(100% / 12 * 3);
+            padding: 15px;
+        }
+        .col-12 {
+            flex: 0 1 calc(100% / 12 * 12);
+        }
+        @media(min-width: 600px){
+            .fixed-width {
+                width: 600px;
+            }
+            .col-md-6 {
+                flex: 0 1 calc(100% / 12 * 6);
+                padding: 15px;
+            }
+        }
+        @media(min-width: 1200px){
+            .fixed-width {
+                width: 1200px;
+            }
+            .col-lg-3 {
+                flex: 0 1 calc(100% / 12 * 3);
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h2>title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore, eum nostrum, consectetur quisquam explicabo quidem in tempora rerum eveniet voluptatem natus possimus eligendi ipsum eaque quis necessitatibus, laborum consequuntur?
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h2>title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore, eum nostrum, consectetur quisquam explicabo quidem in tempora rerum eveniet voluptatem natus possimus eligendi ipsum eaque quis necessitatibus, laborum consequuntur?
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h2>title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore, eum nostrum, consectetur quisquam explicabo quidem in tempora rerum eveniet voluptatem natus possimus eligendi ipsum eaque quis necessitatibus, laborum consequuntur?
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h2>title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore, eum nostrum, consectetur quisquam explicabo quidem in tempora rerum eveniet voluptatem natus possimus eligendi ipsum eaque quis necessitatibus, laborum consequuntur?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

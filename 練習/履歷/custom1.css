@@ -1,0 +1,116 @@
+/* nav */
+nav{
+    background-color: #af460f;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+}
+nav .menu {
+    float: right;
+}
+nav .menu li {
+    list-style: none;
+    display: inline-block;
+}
+nav .menu a{
+    display: block;
+    text-decoration: none;
+    color: #f6eec9;
+    padding: 0 15px;
+    margin: 0px 10px;
+    transition: 0.6s;
+}
+nav .menu a:hover{
+    background-color: #fe8761;
+    color: white;
+}
+/* header */
+header{
+    background-image: url(https:/picsum.photos/id/30/1200/800);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+}
+header .row {
+    justify-content: center;
+    text-align: center;
+}
+header h1{
+    margin: 10px 0px;
+    font-size: 60px;
+}
+header p{
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+/* baseic */
+#baseic{
+    padding: 100px 0;
+    background-color: #fce0c0;
+}
+#baseic .row h2{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px #707070 dotted;
+}
+#baseic .row .col-9 li{
+    list-style: none;
+    padding: 15px 40px;
+}
+#baseic img{
+    border: 1px rgba(255, 255, 255, 0) solid;
+    border-radius: 50%;
+}
+/* experience */
+#experience {
+    padding: 100px 0 ;
+    background-image: url(https:/picsum.photos/id/80/1200/400);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+      
+}
+#experience .row h2{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px black dotted;
+}
+#experience .row .col-10{
+    border-left: 2px solid #ff8a2a;
+}
+#experience .row .col-10 li{
+    list-style: none;
+    padding: 10px 25px;
+}
+/* study */
+#study{
+    background-color: #fce0c0;
+    padding: 100px 0 ;
+}
+#study .row h2{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px black dotted;
+    text-align: center;
+}
+#study .row .col-4{
+    text-align: center;
+}
+#study .row .col-4 p{
+    text-align: left;
+    padding: 5px;
+    line-height: 1.5em;
+}
+/* profession */
+#profession{
+    background-color: #ffffff;
+    padding: 100px 0 ;
+}
+#profession .row h2{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px black dotted;
+}

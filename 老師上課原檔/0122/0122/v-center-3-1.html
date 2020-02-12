@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 400px;
+            background: #ccc;
+        
+            text-align: center;
+
+            font-size: 0;
+        }
+        .content {
+            display: inline-block;
+            vertical-align: middle;
+
+            font-size: 16px;
+            width: 300px;
+        }
+        .container::before {
+            content: "";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="v"></div> -->
+        <div class="content">
+            <div>TITLE</div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio unde reprehenderit aliquid exercitationem ut esse rerum accusantium, corrupti quibusdam assumenda. Ipsum praesentium maxime quod labore minima tempora dolores voluptates cupiditate.</div>
+        </div>
+    </div>
+</body>
+</html>

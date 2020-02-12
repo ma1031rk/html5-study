@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/*-----------------------------
+
+	重設CSS預設樣式＋網站共通設定
+
+------------------------------*/
+
+/* 所有元素的初始間距設定 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, main, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin:0;
+	padding:0;
+	border: 0;
+	font-size: 100%;
+}
+
+/* 預設文字樣式 */
+body{
+	color:#666666;
+	font-family:sans-serif;
+	font-size:87.5%;
+	line-height:1.5;
+}
+
+/* 隱藏項目符號 */
+ul,ol{
+	list-style-type:none;
+}
+
+/* 設定表格框線 */ 
+table {
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+/* 將圖片及表單元件上下置中 */
+img, input, select, textarea { 
+	vertical-align: middle;
+}
+
+
+/* 設定連結顏色 */
+a{
+	color:#00C4AB;
+}
+
+a:hover{
+	color:#CCE739;
+}
+
+/* 設定圖片連結 */
+a img{
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+
+a:hover img{
+	opacity:0.7;
+	filter: alpha(opacity=75);
+}
+
+
+/*	clearfix
+------------------------------*/
+.clearfix:after {/*for modern browser*/
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.clearfix { *zoom:1; } /*for IE6,IE7*/
+
+
+/*--------------------------
+
+　版面設計
+
+---------------------------*/
+
+
+/* 頁首
+---------------------------*/
+
+
+/* 首尾
+---------------------------*/
+
+
+/* 主功能
+---------------------------*/
+
+
+/* 內容區塊
+---------------------------*/
+
+
+/* 麵包屑導航
+---------------------------*/
+
+
+/* 主內容
+---------------------------*/
+
+
+/* 側邊選單
+---------------------------*/
+
+
+/* 回頁面上方
+---------------------------*/
+
+
+
+
+/*--------------------------
+
+　共通樣式
+
+---------------------------*/
+
+

@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Microsoft thenghei;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    /* vertical-align: top; */
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.btn {
+    text-align: center;
+    display: inline-block;
+    border: 0px;
+    text-decoration: none;
+    background-color: #d0ffba;
+    color: black;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+.btn:hover {
+    background-color: #92ff5f;
+    
+}

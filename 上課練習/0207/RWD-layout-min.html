@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "microsoft thenghei";
+            box-sizing: border-box;
+        }
+    .full-width{
+        width: 100%;
+    }
+    .fixed-width{
+        width: 600px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-3 {
+        flex: 0 1 calc(100% / 12 *12);
+        padding: 15px;
+    }
+    @media(min-width:600px){
+        .fixed-width {
+            width: 600px;
+           
+        }
+        .col-3{
+            flex: 0 1 calc(100% /12 * 6);
+        }
+    }
+    @media(min-width:1200px){
+        .fixed-width{
+            width: 100%;
+            margin: auto;
+        }
+        .col-3{
+            flex: 0 1 calc(100%/12 *3);
+        }
+    }
+    
+    
+        
+    </style>
+</head>
+<body>
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="row">
+                <div class="col-3">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad dolor nostrum corporis laudantium vitae dolore, iusto inventore cumque et sit laborum sequi. Voluptatum quidem aperiam impedit doloremque neque reprehenderit.</p>
+                </div>
+                <div class="col-3">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad dolor nostrum corporis laudantium vitae dolore, iusto inventore cumque et sit laborum sequi. Voluptatum quidem aperiam impedit doloremque neque reprehenderit.</p>
+                </div>
+                <div class="col-3">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad dolor nostrum corporis laudantium vitae dolore, iusto inventore cumque et sit laborum sequi. Voluptatum quidem aperiam impedit doloremque neque reprehenderit.</p>
+                </div>
+                <div class="col-3">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad dolor nostrum corporis laudantium vitae dolore, iusto inventore cumque et sit laborum sequi. Voluptatum quidem aperiam impedit doloremque neque reprehenderit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

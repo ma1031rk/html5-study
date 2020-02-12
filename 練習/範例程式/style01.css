@@ -1,0 +1,43 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+ }
+ /*主畫面*/
+body {
+    background-color:rgb(247, 108, 65);
+    background-image: url(/chapter02/lesson07/before/img/bg-stripe01.png);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+.container {
+width: 960px;
+margin: auto;
+padding: 30px 20px;
+background: #ddd;
+border: 1px #000 solid;
+}
+/* 標題 */
+h1 {
+    text-align: center;
+    color: #6fbb9a;
+    font-size: 250%;
+}
+.lead {
+    border-top: 1px #6fbb9a solid;
+    border-bottom: 1px #6fbb9a solid;
+    text-align: center;
+   padding:15px;
+}
+.cat1, .cat2, .cat3 {
+    margin: 10px;
+    border: 1px #000 solid;
+}
+.ph {
+    float: left;
+}
+.date{
+    float: left;
+}
+.more{
+    clear: left;
+}

@@ -1,0 +1,120 @@
+/* nav -- float 方法 */
+/* 
+nav {
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #eef9bf;
+    line-height: 50px;
+}
+nav .logo {
+    float: left;
+}
+nav .menu {
+    float: right;
+}
+nav .menu li {
+    float: left;
+    list-style: none;
+}
+nav a {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    text-decoration: none;
+    color: #6a8caf;
+}
+nav .menu a:hover {
+    background: #a7e9af;
+} */
+/* nav -- flex方法 */
+nav {
+    background: #eef9bf;
+    /* line-height: 60px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+nav .fixed-width {
+    display: flex;
+    /* justify-content: space-between; */
+}
+nav .menu {
+    margin-left: auto;
+}
+nav .menu ul {
+    display: flex;
+}
+nav .menu li {
+    list-style: none;
+}
+nav a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    color: #6a8caf;
+}
+nav .menu a:hover {
+    background: #a7e9af;
+}
+
+/* header */
+
+header {
+    background-image: url('https://picsum.photos/id/147/1200/600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+header h1 {
+    font-size: 72px;
+    text-shadow: 5px 5px 5px black;
+}
+header p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 3px black;
+}
+header .row {
+    justify-content: center;
+    text-align: center;
+    color: #eee;
+}
+/* about */
+#about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: #f1f9f9;
+}
+#about h1 {
+    text-align: center;
+    border-bottom: 1px dotted #3f3f3f;
+    padding-bottom: 15px;
+}
+#about p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+
+/* product */
+#product h1 {
+    text-align: center;
+    border-bottom: 1px dotted #3f3f3f;
+    padding-bottom: 15px;
+}
+#product {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: #f3dfe3;
+}
+#product .product-title {
+    display: block;
+    text-align: center;
+}
