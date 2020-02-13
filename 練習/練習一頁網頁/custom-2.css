@@ -16,13 +16,14 @@
 nav{
     height: 60px;
     line-height: 60px;
+    
     background-color: #93fab5;
 }
 .logo{
-    float: left;
+    display: flex;
 }
 .menu{
-    float: right;
+    display: block;
 }
 .menu li{
     display: inline-block;
@@ -41,6 +42,38 @@ nav .menu a{
 nav .menu a:hover{
     color: white;
     background-color: rgba(178, 192, 188, 0.712);
+}
+@media(min-width:600px){
+    nav{
+        height: 60px;
+        line-height: 60px;
+        background-color: #93fab5;
+    }
+    .logo{
+        float: left;
+    }
+    .menu{
+        float: right;
+    }
+    .menu li{
+        display: inline-block;
+        list-style: none;
+    }
+    nav a{
+        display: block;
+        text-decoration: none;
+    }
+    nav .menu a{
+        margin: 0 5px;
+        padding: 0 15px;
+        color: #4487d4;
+        transition: 0.4s;
+    }
+    nav .menu a:hover{
+        color: white;
+        background-color: rgba(178, 192, 188, 0.712);
+    }
+
 }
 /* header */
 header{

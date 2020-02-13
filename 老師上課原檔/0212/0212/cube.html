@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .space {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            perspective: 800px;
+            margin: 10% auto;
+        }
+        .space:hover .cube {
+            transform: rotateY(360deg)rotateX(180deg);
+        }
+        .cube {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+
+            transition: 2s;
+        }
+        .cube div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            /* opacity: .6; */
+        }
+        .front {
+            background-color: #ff677d;
+            transform: translateZ(100px);
+        }
+        .back {
+            background-color: #40e0d0;
+            transform: rotateX(180deg)translateZ(100px);
+        }
+        .top {
+            background-color: #a7e9af;
+            transform: rotateX(90deg)translateZ(100px);
+        }
+        .bottom {
+            background-color: #e3ff68;
+            transform: rotateX(-90deg)translateZ(100px);
+        }
+        .left {
+            background-color: #ffa025;
+            transform: rotateY(-90deg)translateZ(100px);
+        }
+        .right{
+            background-color: #6705a0;
+            transform: rotateY(90deg)translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="space">
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>

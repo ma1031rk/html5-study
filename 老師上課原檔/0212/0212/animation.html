@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #0af;
+            position: absolute;
+
+            /* animation: ani2 2s forwards; */
+            /* infinite alternate forwards*/
+            animation-name: ani;
+            /*動畫名稱*/
+            
+            animation-duration: 3s;
+            /*動畫時間*/
+            
+            /* animation-iteration-count: infinite; */
+            /*動畫次數*/
+            
+            animation-delay: 0;
+            /*延遲*/
+
+            animation-fill-mode: forwards;
+
+            /* animation-direction: reverse; */
+            /*alternate,alternate-reverse,reverse*/
+
+            animation-timing-function: ease;
+            /*ease, ease-in, ease-out, ease-in-out, linear*/
+        }
+        @keyframes ani {
+            from {
+                transform: translate(0,0)rotate(0deg);
+            }
+            to {
+                transform: translate(500px,500px)rotate(360deg);
+            }
+        }
+        @keyframes ani2 {
+            0% { transform: translate(0,0)rotate(0deg);}
+            25% { transform: translate(500px,0)rotate(90deg);}
+            50% { transform: translate(500px,500px)rotate(180deg);}
+            75% {  transform: translate(0,500px)rotate(270deg);}
+            100% { transform: translate(200px,300px)rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
