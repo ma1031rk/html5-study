@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        test();
+        // 函式宣告式 function declaration
+        // 提升性
+        function test(){
+            let a = 100;
+            let b = 50;
+            console.log(a+b);
+        }
+        
+        // test();
+
+        //函式表達式 function expression
+        //沒有提升性
+        let test2 = function(){
+            let a = 200;
+            let b = 60;
+            console.log(a+b);
+        }
+        
+        test2();
+
+
+        // function test3(){
+        //     let a = 3;
+        //     let b = 5;
+        //     return a + b;
+        // }
+        // let x = test3();
+        // console.log(x);
+
+        // let test3 = function(){
+        //     let a = 3;
+        //     let b = 5;
+        //     return a+b;
+        // }
+        // let x = test3();
+        // console.log(x);
+
+        function test4(name){
+            return 'hello' + ' ' +name;
+        }
+
+        console.log(test4('John'));
+        console.log(test4('Mary'));
+
+        function test5(a,b){
+            return a*b;
+        }
+        console.log(test5(9,9));
+        console.log(test5(15,15));
+</script>
+</body>
+</html>

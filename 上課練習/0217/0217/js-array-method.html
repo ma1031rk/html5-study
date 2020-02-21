@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = ['photoshop','illustrator','indesign','AutoCad','Maya'];
+        // a.forEach(function(data){
+        //     console.log(data);
+        // })
+
+        //filter
+        let a_filter = a.filter(function(data){
+            return data.indexOf('p') > -1;
+        })
+        // console.log(a_filter);
+
+        //map
+        let a_map = a.map(function(data){
+            if(data.indexOf('photoshop') > -1){
+                return '已售完'
+            }else{
+                return data;
+            }
+        })
+        // console.log(a_map)
+        // let t = 'apple';
+        // console.log(t.indexOf('z'));
+
+        //find
+
+        let a_find = a.find(function(data){
+            return data.indexOf('a') > -1;
+        })
+        console.log(a_find);
+
+        //some  -->boolean
+        let a_some = a.some(function(data){
+            return data.indexOf('a') > -1;
+        })
+        console.log(a_some);
+        
+        //every  -->boolean
+        let a_every = a.every(function(data){
+            return data.indexOf('a') > -1;
+        })
+        console.log(a_every);
+    </script>
+</body>
+</html>

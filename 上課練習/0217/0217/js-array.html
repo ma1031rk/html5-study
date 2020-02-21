@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a = new Array();
+
+        // a[0] = "PHOTOSHOP";
+        // a[1] = "ILLUSTRATOR";
+        // a[2] = "INDESIGN";
+
+        
+        // let a = new Array('photoshop','illustrator','indesign')
+        let a = ['photoshop','illustrator','indesign','AutoCad','MAYA'];
+        // console.log(a);
+        // console.log(a[0]);
+        // console.log(a[1]);
+        // console.log(a[2]);
+        // // console.log(a[3]);
+        // console.log(a.length);
+        // for(let i=0;i<a.length;i++){
+        //     console.log(a[i]);
+        // }
+
+        // a.push('Blender','AutoCAD');
+        // a.pop();
+        // a.unshift('TEST');
+        // a.shift();
+        
+        //splice 拼接
+        // a.splice(2,0,'AUTOCAD','3DSMAX');
+        // a.splice(2,1);
+        // a.splice(1,1);
+
+        //slice 切片
+        // let a_slice = a.slice(0,2);
+        // console.log(a_slice);
+
+        //concat 合併
+        let b = ['HTML','CSS','Javascript'];
+
+        // let c = a.concat(b);
+        let c = b.concat(a);
+        // console.log(c)
+        
+        a.forEach(function(data,index){
+            // console.log(data);
+            // console.log(data,index);
+            // console.log(index+1,data)
+        })
+
+        c.forEach(function(data){ 
+            console.log(data)           
+        })
+
+        //join() 陣列->文字
+        //split() 文字->陣列
+        let a_join = a.join();
+        console.log(a_join);
+
+        let text = 'photoshop_illustrator_indesign_AutoCad_MAYA';
+        let text_split = text.split('_');
+        console.log(text_split)
+    </script>
+</body>
+</html>

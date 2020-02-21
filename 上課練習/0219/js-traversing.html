@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contarner">
+        <h1 id="title"12345></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla minima, non aut iure voluptates similique libero asperiores sapiente. Obcaecati nobis aspernatur eum sint, iusto odio et reiciendis amet beatae ipsam!</p>
+        <ul id="items">
+            <li class="item"><a href="#">menu1</a></li>
+            <li class="item"><a href="#">menu2</a></li>
+            <li class="item"><a href="#">menu3</a></li>
+            <li class="item"><a href="#">menu4</a></li>
+        </ul>
+        <script>
+            let ltems = document.getElementById('items');
+            let items_parent_element=items.parentNode;
+            let items_parent_node=items.parentElement;
+            console.log(items_parent_node);
+            console.log(items_parent_element);
+
+            let a = items.previousElementSibling;
+            console.log(a);
+        </script>
+    </div>
+</body>
+</html>
